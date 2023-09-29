@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="styles/styles-index.css" rel="stylesheet">
   </head>
   <body class="page">
     <header class="page-header">
       <nav class="main-nav">
         <p class="logo">
-      <img src="img/logotype-sedona.svg" alt="Логотип Седоны" width="140" height="70">
+      <img src="img/logotype-sedona.png" alt="Логотип Седоны" width="140" height="70">
       </p>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -18,7 +19,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -61,7 +62,7 @@
         <li class="advantages-item">
           <h3 class="advantages-title">Настоящий городок</h3>
           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="img/photo-city.jpg" alt="фотография города"  width="800" height="385">
+          <img src="img/photo-city.jpg" alt="Фотография города"  width="800" height="385">
         </li>
         <li class="advantages-item">
           <h3 class="advantages-title">Небольшая площадь</h3>
@@ -76,7 +77,7 @@
           <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
         <li class="advantages-item">
-          <img src="img/photo-canyon.jpg" alt="фотография каньона" width="800" height="385">
+          <img src="img/photo-canyon.jpg" alt="Фотография моста дьявола" width="800" height="385">
           <h3 class="advantages-title">Там есть мост дьявола</h3>
           <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
@@ -93,18 +94,18 @@
       <section class="service">
         <ul class="service-list">
           <li class="service-item">
-            <img class="service-image" src="img/image-house.png" alt="иконка дома" width="75" height="72">
+            <img class="service-image" src="img/image-house.svg" alt="иконка дома" width="75" height="72">
             <h3 class="service-title">Жильё</h3>
             <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="service-item">
-            <img class="service-image" src="img/image-burger.png" alt="иконка гамбургера" width="75" height="72">
+            <img class="service-image" src="img/image-burger.svg" alt="иконка гамбургера" width="75" height="72">
             <h3 class="service-title">Еда</h3>
             <p class="service-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="search-item">
-            <img class="service-image" src="img/image-present.png" alt="иконка подарка" width="75" height="72">
+            <img class="service-image" src="img/image-present.svg" alt="иконка подарка" width="75" height="72">
             <h3 class="service-title">Сувениры</h3>
             <p class="service-description">Не только китайского,
               но и настоящего местного производства!</p>
@@ -118,7 +119,7 @@
         Заинтересовались?
     </h2>
     <p class="description-item">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+    <a class="button" href="#">Поиск гостиниц В Седоне</a>
   </section>
   <section class="appointment">
     <h2 class="appointment-title">
@@ -127,9 +128,10 @@
   <p class="appointment-item">Только полезная информация и никакого спама, честное бойскаутское!</p>
   <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
   <p class="appointment-form-email">
-    <label for="appointment-email">E-mail</label>
-  <input type="text" id="appointment-email" name="appointment-email" placeholder="E-mail">
-  <button type="submit">Подписаться</button></p>
+    <label class="visually-hidden" for="appointment-email">E-mail</label>
+  <input class="appointment-field" type="text" id="appointment-email" name="appointment-email" placeholder="Ваш e-mail">
+  <button class="appointment-button" type="submit">Подписаться</button>
+</p>
 </form>
 </section>
     </main>
@@ -138,17 +140,17 @@
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a href="https://vk.com/htmlacademy">
-            <img src="img/vk.svg" alt="vkontakte" width="24" height="14">
+            <span class="visually-hidden">В контакте</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a href="https://t.me/htmlacademy">
-            <img src="img/telegramm.svg" alt="telegramm" width="18" height="16">
+            <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a href="https://www.youtube.com/user/htmlacademyru">
-            <img src="img/youtube.svg" alt="youtube" width="22" height="17">
+            <span class="visually-hidden">You tube</span>
           </a>
         </li>
       </ul>
@@ -160,9 +162,6 @@
             <img src="img/HTML-Academy.svg" alt="HTML-Academy" width="115" height="33">
           </a>
         </p>
-
-
-
     </footer>
 
   </body>
