@@ -38,7 +38,7 @@
                 <span class="favorite-counter">12</span>
               </a>
               <li class="user-item">
-                <a class="user-link button user-button" href="#">Хочу сюда
+                <a class="button user-button" href="#">Хочу сюда
                 </a>
               </li>
         </ul>
@@ -179,6 +179,43 @@
           </a>
         </p>
     </footer>
+
+<div class="modal-window">
+  <div class="modal modal-auth">
+
+    <section class="modal-content">
+
+      <h2 class="modal-title">Поиск гостинниц в Седоне</h2>
+      <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+      <div class="field-group">
+        <p class="modal-text modal-date">Дата заезда:</p>
+        <label class="visually-hidden" for="date">Дата Заезда</label>
+        <input class="modal-field" type="text" name="date" value="27 апреля 2020">
+      </div>
+      <div class="field-group">
+        <p class="modal-text modal-date">Дата Выезда:</p>
+        <label class="visually-hidden" for="date">Дата выезда</label>
+        <input class="modal-field" type="text" name="date" value="1 сентября 2023">
+      </div>
+      <div class="field-people">
+      <div class="field-group modal-people">
+        <p class="modal-text">Взрослые:</p>
+        <label class="visually-hidden" for="date"></label>
+        <input class="modal-field modal-field-people" type="number">
+      </div>
+
+      <div class="field-group modal-people">
+        <p class="modal-text ">Дети:</p>
+        <label class="visually-hidden" for="date"></label>
+        <input class="modal-field modal-field-people" type="number">
+      </div>
+    </div>
+      <button class="button modal-button" type="submit">найти</button>
+    </section>
+  </div>
+</div>
   </div>
   </body>
 </html>

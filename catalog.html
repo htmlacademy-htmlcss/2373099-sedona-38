@@ -37,7 +37,7 @@
                   <span class="favorite-counter">12</span>
                 </a>
                 <li class="user-item">
-                  <a class="user-link button user-button" href="#">Хочу сюда
+                  <a class="button user-button" href="#">Хочу сюда
                   </a>
                 </li>
           </ul>
@@ -68,17 +68,23 @@
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" type="checkbox" name="Бассейн" checked>Бассейн
+                        <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                     </label>
                 </li>
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" type="checkbox" name="Парковка" checked>Парковка
+                        <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                     </label>
                     </li>
                     <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" type="checkbox" name="Wi-fi">Wi-fi
+                        <input class="visually-hidden control-input" type="checkbox" name="Wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-fi</span>
                     </label>
                 </li>
                 </ul>
@@ -88,17 +94,23 @@
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" type="radio" name="hotels" checked>Гостиница
+                        <input class="visually-hidden control-input" type="radio" name="hotels" checked>
+                        <span class="control-circle"></span>
+                        <span class="control-label">Гостиница</span>
                     </label>
                 </li>
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" type="radio" name="hotels">Мотель
+                        <input class="visually-hidden control-input" type="radio" name="hotels">
+                        <span class="control-circle"></span>
+                        <span class="control-label">Мотель</span>
                     </label>
                     </li>
                     <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" type="radio" name="hotels">Апартаменты
+                        <input class="visually-hidden control-input" type="radio" name="hotels">
+                        <span class="control-circle"></span>
+                        <span class="control-label">Апартаменты</span>
                     </label>
                 </li>
                 </ul>
@@ -108,11 +120,22 @@
                   <div class="price-wrapper">
                     <div class="price-field">
                       <label class="price-label" for="price-from">от</label>
-                      <input class="price-input price-input-from" type="text" id="price-from" value="0" placeholder="0">
+                      <input class="price-input price-input-from" type="number" id="price-from" value="0" placeholder="0">
                     </div>
                     <div class="price-field">
                       <label class="price-label" for="price-to">до</label>
-                      <input class="price-input price-input-to" type="text" id="price-to" value="9000" placeholder="9000">
+                      <input class="price-input price-input-to" type="number" id="price-to" value="9000" placeholder="9000">
+                    </div>
+
+                      <div class="range-slider">
+                        <div class="range-bar" style="left: 0; width: 226px">
+                          <button class="range-toggle toggle-min">
+                            <span class="visually-hidden">Изменить минимальную цену</span>
+                          </button>
+                          <button class="range-toggle toggle-max">
+                            <span class="visually-hidden">Изменить максимальную цену</span>
+                          </button>
+                    </div>
                     </div>
                   </div>
                 </fieldset>
@@ -285,6 +308,7 @@
               <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </p>
             <p class="logo-html">
+
                 <a class="logo-htmlacademy logotype" href="https://htmlacademy.ru">
                 </a>
             </p>
