@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="styles/styles-index.css" rel="stylesheet">
-
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico"sizes="32x32">
   </head>
   <body>
     <div class="page-container">
-    <header class="page-header">
-
+      <header class="page-header" data-test="header">
         <a class="logo" href="index.html">
           <img class="logo-header" src="images/logotype-sedona.png" alt="Логотип Седоны" width="140" height="70">
         </a>
@@ -29,68 +28,68 @@
           <li class="user-item">
             <a class="user-link search" href="#">
               <span class="visually-hidden">Поиск</span>
-              </a>
+            </a>
             <li class="user-item">
               <a class="user-link likes" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorite-counter">12</span>
               </a>
-              <li class="user-item">
-                <a class="button user-button" href="#">Хочу сюда
-                </a>
-              </li>
+            <li class="user-item">
+              <a class="button user-button" href="#">Хочу сюда
+              </a>
+            </li>
         </ul>
       </nav>
-    </header>
-    <main class="main-index main-container">
+      </header>
+      <main class="main-index main-container" data-test="main">
       <section class="hero">
         <h1 class="visually-hidden">Главная страница Седоны
         </h1>
           <img class="image welcome-sedona" src="images/welcome-sedona.svg" alt="welcome to the gorgious Sedona becouse the grand canyon sucks" width="458" height="352">
       </section>
 
-        <section class="description description-hero">
-          <h2 class="description-title">
+      <section class="description description-hero">
+        <h2 class="description-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h2>
         <p class="description-item">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества
-      </h2>
-      <ul class="advantages-list">
-        <li class="advantages-item advantages-item-lead">
-          <div class="advantages-text">
-          <h3 class="advantages-title">Настоящий<br>городок</h3>
-          <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-        <img class="image" src="images/photo-city.jpg" alt="Фотография города"  width="800" height="385">
-        </li>
-        <li class="advantages-item">
-          <div class="advantages-text">
-          <h3 class="advantages-title">Небольшая<br>площадь</h3>
-          <p class="advantages-description">Все достопримечательности находятся очень близко</p>
-        </div>
-      </li>
-        <li class="advantages-item">
-          <div class="advantages-text">
-          <h3 class="advantages-title">Красивая<br>дорога</h3>
-          <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-      </li>
-        <li class="advantages-item">
-          <div class="advantages-text">
-          <h3 class="advantages-title">Мало<br>туристов</h3>
-          <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-        </li>
-        <li class="advantages-item advantages-item-lead advantages-item-reverse">
-          <div class="advantages-text">
-          <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
-          <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </div>
-          <img class="image advantages-picture" src="images/photo-canyon.jpg" alt="Фотография моста дьявола" width="800" height="385">
-        </li>
+        </h2>
+        <ul class="advantages-list">
+          <li class="advantages-item advantages-item-lead">
+            <div class="advantages-text">
+              <h3 class="advantages-title">Настоящий<br>городок</h3>
+              <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img class="image" src="images/photo-city.jpg" alt="Фотография города"  width="800" height="385">
+          </li>
+          <li class="advantages-item">
+            <div class="advantages-text">
+              <h3 class="advantages-title">Небольшая<br>площадь</h3>
+              <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+            </div>
+          </li>
+            <li class="advantages-item">
+              <div class="advantages-text">
+              <h3 class="advantages-title">Красивая<br>дорога</h3>
+              <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="advantages-item">
+            <div class="advantages-text">
+              <h3 class="advantages-title">Мало<br>туристов</h3>
+              <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+          <li class="advantages-item advantages-item-lead advantages-item-reverse">
+            <div class="advantages-text">
+              <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
+              <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+            <img class="image advantages-picture" src="images/photo-canyon.jpg" alt="Фотография моста дьявола" width="800" height="385">
+          </li>
       </ul>
       </section>
       <section class="description description-service">
@@ -98,7 +97,7 @@
           Приезжайте в Седону отдохнуть в комфорте и уюте!
       </h2>
       <p class="description-item">Опытный персонал и качественное обслуживание!</p>
-    </section>
+      </section>
       <section class="service">
         <ul class="service-list">
           <li class="service-item image-burger">
@@ -113,45 +112,38 @@
             <p class="service-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </div>
-        </li>
+          </li>
           <li class="service-item image-present">
             <div class="service-text">
             <h3 class="service-title">Сувениры</h3>
             <p class="service-description">Не только китайского,
               но и настоящего местного производства!</p>
             </div>
-            </li>
+          </li>
         </ul>
       </section>
-
-
-    <section class="description description-search">
-      <h2 class="description-title">
-        Заинтересовались?
-    </h2>
-    <p class="description-item">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <a class="button button-search" href="#" type="button">Поиск гостиниц в Седоне</a>
-  </section>
-  <section class="appointment appointment-index">
-    <div class="appointment-subscribe">
-    <h2 class="appointment-title">
-      Подпишитесь на рассылку
-  </h2>
-  <p class="appointment-item">Только полезная информация и никакого спама, честное бойскаутское!</p>
-  <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-  <p class="appointment-form-email">
-    <label class="visually-hidden" for="appointment-email">E-mail</label>
-  <input class="appointment-field" type="text" id="appointment-email" name="appointment-email" placeholder="Ваш e-mail">
-  <button class="button appointment-button" type="submit">Подписаться</button>
-</p>
-</form>
-    </div>
-</section>
-
+      <section class="description description-search">
+        <h2 class="description-title">Заинтересовались?
+        </h2>
+        <p class="description-item">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button button-search" href="#">Поиск гостиниц в Седоне</a>
+      </section>
+      <section class="appointment appointment-index">
+        <div class="appointment-subscribe">
+        <h2 class="appointment-title">Подпишитесь на рассылку
+        </h2>
+        <p class="appointment-item">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="appointment-form-email">
+            <label class="visually-hidden" for="appointment-email">E-mail</label>
+            <input class="appointment-field" type="text" id="appointment-email" name="appointment-email" placeholder="Ваш e-mail">
+            <button class="button appointment-button" type="submit">Подписаться</button>
+          </p>
+        </form>
+          </div>
+      </section>
     </main>
-
-    <footer class="page-footer">
-
+      <footer class="page-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-item-button social-vk" href="https://vk.com/htmlacademy" title="Вконтакте">
@@ -177,69 +169,62 @@
           </a>
         </p>
     </footer>
-
-<div class="modal-window">
-  <div class="modal modal-auth">
-
-    <section class="modal-content">
-      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-      <h2 class="modal-title">Поиск гостинниц в Седоне</h2>
-      <button class="modal-close-button" type="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
+  <div class="modal-window modal-window-close">
+    <div class="modal modal-auth">
+      <section class="modal-content">
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="modal-title">Поиск гостинниц в Седоне</h2>
+        <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
       <div class="field-group">
-
-        <label class="modal-text " for="date">Дата Заезда:</label>
-        <input class="modal-field icon-date" type="text" id="date" value="27 апреля 2020" placeholder="Укажите дату">
+        <label class="modal-text" for="check-in-date">Дата Заезда:</label>
+        <input class="modal-field icon-date" type="text" id="check-in-date" name="date-arrival" value="27 апреля 2020" placeholder="Укажите дату">
         <span class="footnote footnote-error">Мы не можем отправить вас в прошлое.</span>
       </div>
-
-
       <div class="field-group">
-
-        <label class="modal-text" for="date">Дата выезда:</label>
-        <input class="modal-field icon-date" type="text" id="date" value="1 сентября 2023" placeholder="Укажите дату">
+        <label class="modal-text" for="check-out-date">Дата выезда:</label>
+        <input class="modal-field icon-date" type="text" id="check-out-date" name="date-departure" value="1 сентября 2023" placeholder="Укажите дату">
        <span class="footnote">На эти даты есть свободные номера. Пока есть.</span>
       </div>
-
-        <div class="field-people">
+      <div class="field-people">
         <p class="modal-people field-adult">
-        <label class="modal-text" for="people">Взрослые:</label>
+        <label class="modal-text" for="adult-people">Взрослые:</label>
         <button class="modal-button-minus" type="button">
           <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
             <path d="M3 9v2h14V9H3Z"/></svg>
         </button>
-        <input class="modal-field modal-field-people" id="people" type="number" value="2" min="1" max="99">
+        <input class="modal-field modal-field-people" id="adult-people" type="number" name="adult" value="2" min="1" max="99">
         <button class="modal-button-plus" type="button">
           <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"  width="20" height="20" fill="#756157" viewBox="0 0 20 20">
             <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
         </button>
       </p>
 
-      <p class="modal-people field-child">
-        <label class="modal-text" for="people">Дети:</label>
-        <span class="tooltip">
-          <button class="tooltip-toggle" type="button">i</button>
-          <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
-            Дети до 6 лет размещаются бесплатно.
-          </span>
-      </span>
-      <button class="modal-button-minus" type="button">
-        <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
-          <path d="M3 9v2h14V9H3Z"/></svg>
-      </button>
-        <input class="modal-field modal-field-people" id="people" type="number" value="2" min="0" max="99">
-        <button class="modal-button-plus" type="button">
-          <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"  width="20" height="20" fill="#756157" viewBox="0 0 20 20">
-            <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
-        </button>
-      </p>
+          <p class="modal-people field-child">
+            <label class="modal-text" for="child-people">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button">i</button>
+              <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                Дети до 6 лет размещаются бесплатно.
+              </span>
+            </span>
+              <button class="modal-button-minus" type="button">
+                <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                <path d="M3 9v2h14V9H3Z"/></svg>
+              </button>
+              <input class="modal-field modal-field-people" id="child-people" type="number" name="child" value="2" min="0" max="99">
+              <button class="modal-button-plus" type="button">
+              <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"  width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+              <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+            </button>
+          </p>
+          </div>
+          <button class="button modal-button" type="submit">найти</button>
+        </form>
+      </section>
+      </div>
+      </div>
     </div>
-      <button class="button modal-button" type="submit">найти</button>
-    </form>
-    </section>
-  </div>
-</div>
-  </div>
   </body>
 </html>

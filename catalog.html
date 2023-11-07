@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link href="styles/styles-index.css" rel="stylesheet">
-
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" sizes="32x32">
   </head>
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
           <a class="logo" href="index.html">
             <img class="logo-header" src="images/logotype-sedona.png" alt="Логотип Седоны" width="140" height="70">
           </a>
@@ -41,7 +41,7 @@
           </ul>
         </nav>
       </header>
-        <main class="main-catalog main-container">
+        <main class="main-catalog main-container" data-test="main">
 
               <section class="catalog-hotels">
               <header class="inner-header">
@@ -66,22 +66,22 @@
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
-                        <span class="control-mark"></span>
+                        <input class="control-input" type="checkbox" name="swimming-pool" checked>
+
                         <span class="control-label">Бассейн</span>
                     </label>
                 </li>
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
-                        <span class="control-mark"></span>
+                        <input class="control-input" type="checkbox" name="parking" checked>
+
                         <span class="control-label">Парковка</span>
                     </label>
                     </li>
                     <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="visually-hidden control-input" type="checkbox" name="Wi-fi">
-                        <span class="control-mark"></span>
+                        <input class="control-input" type="checkbox" name="Wi-fi">
+
                         <span class="control-label">Wi-fi</span>
                     </label>
                 </li>
@@ -92,22 +92,21 @@
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="hotels" checked>
-                        <span class="control-circle"></span>
+                        <input class="control-input control-input-radio" type="radio" name="housing-type" value="hotel" checked>
                         <span class="control-label">Гостиница</span>
                     </label>
                 </li>
                 <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="hotels">
-                        <span class="control-circle"></span>
+                        <input class="control-input control-input-radio" type="radio" name="housing-type" value="motel">
+
                         <span class="control-label">Мотель</span>
                     </label>
                     </li>
                     <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="hotels">
-                        <span class="control-circle"></span>
+                        <input class="control-input control-input-radio" type="radio" name="housing-type" value="appartaments">
+
                         <span class="control-label">Апартаменты</span>
                     </label>
                 </li>
@@ -118,11 +117,11 @@
                   <div class="price-wrapper">
                     <div class="price-field">
                       <label class="price-label" for="price-from">от</label>
-                      <input class="price-input price-input-from" type="number" id="price-from" value="0" placeholder="0">
+                      <input class="price-input price-input-from" type="number" id="price-from" name="min-price" value="0" placeholder="0">
                     </div>
                     <div class="price-field">
                       <label class="price-label" for="price-to">до</label>
-                      <input class="price-input price-input-to" type="number" id="price-to" value="9000" placeholder="9000">
+                      <input class="price-input price-input-to" type="number" id="price-to" name="max-pice" value="9000" placeholder="9000">
                     </div>
 
                     <div class="range">
@@ -136,6 +135,7 @@
                           </button>
                         </div>
                       </div>
+                  </div>
                   </div>
                 </fieldset>
                 <div class="form-button-wrapper">
@@ -277,14 +277,14 @@
               <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="appointment-form-email">
                 <label class="visually-hidden" for="appointment-email">E-mail</label>
-              <input class="appointment-field" type="text" id="appointment-email" name="appointment-email" placeholder="Ваш e-mail">
+              <input class="appointment-field appointment-field-catalog" type="text" id="appointment-email" name="appointment-email" placeholder="Ваш e-mail">
               <button class="button appointment-button" type="submit">Подписаться</button>
             </p>
             </form>
             </div>
           </section>
         </main>
-        <footer class="page-footer">
+        <footer class="page-footer" data-test="footer">
 
           <ul class="social-list">
             <li class="social-item">
