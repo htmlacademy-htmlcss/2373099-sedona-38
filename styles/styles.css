@@ -57,7 +57,7 @@ body {
 }
 .logo {
   display: block;
-  margin-bottom: -6px;
+  margin-bottom: -8px;
   position: relative;
   height: 72px;
   margin-right: 30px;
@@ -95,6 +95,7 @@ body {
 }
 .navigation-current .navigation-link {
   border-bottom: solid 2px rgba(117, 98, 87, 1);
+  position: relative;
 }
 .navigation-link:hover {
   color: #82B3D3;
@@ -152,8 +153,8 @@ body {
   height: 20px;
   justify-content: center;
   align-items: center;
-  margin-top: -15px;
-  margin-left: -10px;
+  margin-top: -24px;
+  margin-left: -13px;
   font-size: 10px;
   line-height: 10px;
   color: rgba(255, 255, 255);
@@ -197,8 +198,7 @@ body {
 
 .user-button {
   background-color: #756157;
-  width: 90px;
-  margin-left: 20px;
+  margin-left: 13px;
   margin-top: 14px;
   padding: 8px 34px;
 }
@@ -216,6 +216,7 @@ body {
   background-color: #756157;
   width: 276px;
   margin: 0 auto;
+  margin-top: 54px;
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
@@ -335,6 +336,7 @@ body {
   width: 651px;
   margin: 0 auto;
   padding: 69px 0;
+  margin-bottom: 21px;
 }
 .description-service {
   gap: 20px;
@@ -345,12 +347,12 @@ body {
 .description-search {
   width: 592px;
   margin: 0 auto;
+  padding-top: 98px;
   padding-bottom: 96px;
 }
 .description-search .description-item {
-  padding-top: 20px;
-  padding-bottom: 54px;
-}
+  margin-top: 20px;
+  }
 .advantages {
   padding-bottom: 64px;
 }
@@ -391,7 +393,7 @@ object-fit: cover;
 .advantages-text {
   width: 230px;
   text-align: center;
-
+  align-self: center;
   padding: 102px 85px;
   display: flex;
   flex-direction: column;
@@ -426,9 +428,7 @@ object-fit: cover;
 .advantages-item-reverse {
   flex-direction: row-reverse;
 }
-.service {
-  padding-bottom: 96px;
-}
+
 .service-list {
   display: flex;
   flex-wrap: wrap;
@@ -513,7 +513,7 @@ object-fit: cover;
   font-size: 22px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
 }
 .appointment-form-email {
   display: flex;
@@ -577,8 +577,8 @@ object-fit: cover;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 40px;
-  height: 40px;
+  width: 47px;
+  height: 42px;
 }
 .social-item-button::before {
   content: "";
@@ -678,7 +678,7 @@ object-fit: cover;
   background-repeat: no-repeat;
   color:#FFFFFF;
   margin-bottom: 50px;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 73px 70px;
 }
 .breadcrumbs {
   display: flex;
@@ -833,7 +833,10 @@ object-fit: cover;
   width: 20px;
   height: 20px;
 }
-
+.control-label {
+  font-size: 18px;
+  line-height: 23px;
+}
 
 .price-filter {
   width: 288px;
@@ -933,7 +936,7 @@ input::-webkit-inner-spin-button {
   height: 4px;
   background-color: rgb(255, 255, 255, 0.3);
   width: 287px;
-  margin-top: 48px;
+  margin-top: 42px;
 }
 .range-bar {
   position: absolute;
@@ -984,17 +987,18 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
   margin-right: auto;
 }
 .select-control {
   appearance: none;
   width: 292px;
-  padding: 16px 20px;
+  padding: 12px 20px;
   margin-right: 70px;
   margin-left: auto;
   border: 2px solid rgb(229, 229, 229);
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
@@ -1072,7 +1076,7 @@ input::-webkit-inner-spin-button {
   flex-wrap: wrap;
   gap: 20px;
   padding: 0;
-  margin: 0;
+
   list-style: none;
 }
 
@@ -1225,6 +1229,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
   padding-left: 70px;
   padding-right: 70px;
+  padding-bottom: 60px;
+  padding-top: 40px;
   list-style-type: none;
 }
 .pagination-list {
@@ -1233,7 +1239,7 @@ input::-webkit-inner-spin-button {
   gap: 8px;
   list-style-type: none;
   padding: 0;
-  margin-top: 40px;
+  margin: 0;
 }
 .pagination-link {
   display: block;
