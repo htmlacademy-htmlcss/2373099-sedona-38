@@ -166,7 +166,7 @@
               <p class="appointment-form-email">
                 <label class="visually-hidden" for="appointment-email">E-mail</label>
                 <input class="appointment-field" type="text" id="appointment-email" name="appointment-email"
-                  placeholder="Ваш e-mail" />
+                  placeholder="Ваш e-mail" required/>
                 <button class="button appointment-button" type="submit">
                   Подписаться
                 </button>
@@ -210,13 +210,13 @@
               <div class="field-group">
                 <label class="modal-text" for="check-in-date">Дата Заезда:</label>
                 <input class="modal-field icon-date" type="text" id="check-in-date" name="date-arrival"
-                  value="27 апреля 2020" placeholder="Укажите дату" />
+                  value="27 апреля 2020" placeholder="Укажите дату" required/>
                 <span class="footnote footnote-error">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="field-group">
                 <label class="modal-text" for="check-out-date">Дата выезда:</label>
                 <input class="modal-field icon-date" type="text" id="check-out-date" name="date-departure"
-                  value="1 сентября 2023" placeholder="Укажите дату" />
+                  value="1 сентября 2023" placeholder="Укажите дату" required/>
                 <span class="footnote">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="field-people">
@@ -230,7 +230,7 @@
                     <span class="visually-hidden">Уменьшает количество взрослых</span>
                   </button>
                   <input class="modal-field modal-field-people" id="adult-people" type="number" name="adult" value="2"
-                    min="1" max="99" />
+                    min="1" max="99" required/>
                   <button class="modal-button-plus" type="button">
                     <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                       focusable="false" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
@@ -261,7 +261,7 @@
                     <span class="visually-hidden">Уменьшает количество детей</span>
                   </button>
                   <input class="modal-field modal-field-people" id="child-people" type="number" name="child" value="2"
-                    min="0" max="99" />
+                    min="0" max="99" required/>
                   <button class="modal-button-plus" type="button">
                     <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                       focusable="false" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
