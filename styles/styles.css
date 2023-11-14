@@ -199,7 +199,6 @@ body {
 
 .user-link:focus {
   --color: #82b3d3;
-
 }
 
 .search {
@@ -447,7 +446,7 @@ body {
 .description-search {
   width: 592px;
   margin: 0 auto;
-  padding-top: 98px;
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 
@@ -512,8 +511,7 @@ body {
   text-align: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
-  align-self: center;
-  padding: 102px 85px;
+  padding: 112px 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,6 +520,9 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 30px;
+}
+.advantages-text-lead {
+  padding: 102px 85px;
 }
 
 .advantages-title {
@@ -623,9 +624,9 @@ body {
   position: relative;
   display: block;
   content: "";
-  width: 75px;
-  height: 72px;
-  margin: 0 auto 30px auto;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 28px auto;
 }
 
 .service-description {
@@ -737,6 +738,7 @@ body {
   flex-wrap: wrap;
   margin: 5px 0;
   padding: 0;
+  min-width: 142px;
 }
 
 .social-item {
@@ -1164,8 +1166,16 @@ body {
   letter-spacing: inherit;
   word-spacing: inherit;
   border: none;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
-
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
 .price-input-from {
   border-radius: 4px 0 0 4px;
 }
@@ -1281,6 +1291,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-right: auto;
+  max-width: 350px;
 }
 
 .select-control {
@@ -1299,6 +1310,7 @@ body {
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 20px) 50%;
+  background-color: #ffffff;
 }
 
 .select-control:hover {
@@ -1526,7 +1538,7 @@ body {
   grid-template-rows: 212px repeat(4, auto);
   max-width: 300px;
   gap: 16px 20px;
-  grid-template-areas:
+      grid-template-areas:
     "hotel-card-image hotel-card-image"
     "hotel-card-name hotel-card-name"
     "hotel-name hotel-price"
@@ -1761,6 +1773,16 @@ body {
   text-align: center;
   padding: 0;
   border-radius: 0;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+.modal-field-people::-webkit-outer-spin-button,
+.modal-field-people::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
 }
 
 .modal-button-minus {
@@ -1825,6 +1847,7 @@ body {
   display: flex;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
 }
 
 .field-people {
