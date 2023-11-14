@@ -13,7 +13,7 @@
     <div class="page-container">
       <header class="page-header" data-test="header">
         <a class="logo" href="index.html">
-          <img class="logo-header" src="images/logotype-sedona.png" alt="Логотип Седоны" width="140" height="70" />
+          <img class="logo-header" src="images/logotype-sedona.png" alt="Логотип Седоны." width="140" height="70" />
         </a>
         <nav class="main-nav">
           <ul class="navigation-list">
@@ -49,7 +49,7 @@
         <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Главная страница Седоны</h1>
           <img class="image welcome-sedona" src="images/welcome-sedona.svg"
-            alt="welcome to the gorgious Sedona becouse the grand canyon sucks" width="458" height="352" />
+            alt="Welcome to the gorgious Sedona becouse the grand canyon sucks." width="458" height="352" />
         </section>
         <section class="description description-hero">
           <h2 class="description-title">
@@ -63,13 +63,13 @@
           <h2 class="visually-hidden">Преимущества Седоны</h2>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-lead">
-              <div class="advantages-text">
+              <div class="advantages-text advantages-text-lead">
                 <h3 class="advantages-title">Настоящий<br />городок</h3>
                 <p class="advantages-description">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
-              <img class="image" src="images/photo-city.jpg" alt="Фотография города" width="800" height="385" />
+              <img class="image" src="images/photo-city.jpg" alt="Фотография города." width="800" height="385" />
             </li>
             <li class="advantages-item">
               <div class="advantages-text">
@@ -96,13 +96,13 @@
               </div>
             </li>
             <li class="advantages-item advantages-item-lead advantages-item-reverse">
-              <div class="advantages-text">
+              <div class="advantages-text advantages-text-lead">
                 <h3 class="advantages-title">Там есть<br />мост дьявола</h3>
                 <p class="advantages-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
-              <img class="image advantages-picture" src="images/photo-canyon.jpg" alt="Фотография моста дьявола"
+              <img class="image advantages-picture" src="images/photo-canyon.jpg" alt="Фотография моста дьявола."
                 width="800" height="385" />
             </li>
           </ul>
@@ -153,7 +153,7 @@
             Укажите предполагаемые даты поездки,<br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="button button-search" href="#">Поиск гостиниц в Седоне</a>
+          <a class="button button-search" href="#">Поиск гостиницы в Седоне</a>
         </section>
         <section class="appointment appointment-index" data-test="subscribe">
           <div class="appointment-subscribe">
@@ -166,7 +166,7 @@
               <p class="appointment-form-email">
                 <label class="visually-hidden" for="appointment-email">E-mail</label>
                 <input class="appointment-field" type="text" id="appointment-email" name="appointment-email"
-                  placeholder="Ваш e-mail" />
+                  placeholder="Ваш e-mail" required/>
                 <button class="button appointment-button" type="submit">
                   Подписаться
                 </button>
@@ -205,18 +205,18 @@
       <div class="modal-window modal-window-close">
         <div class="modal modal-auth">
           <section class="modal-content">
-            <h2 class="modal-title">Поиск гостиниц в Седоне</h2>
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="field-group">
                 <label class="modal-text" for="check-in-date">Дата Заезда:</label>
                 <input class="modal-field icon-date" type="text" id="check-in-date" name="date-arrival"
-                  value="27 апреля 2020" placeholder="Укажите дату" />
+                  value="27 апреля 2020" placeholder="Укажите дату" required/>
                 <span class="footnote footnote-error">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="field-group">
-                <label class="modal-text" for="check-out-date">Дата выезда:</label>
+                <label class="modal-text" for="check-out-date">Дата Выезда:</label>
                 <input class="modal-field icon-date" type="text" id="check-out-date" name="date-departure"
-                  value="1 сентября 2023" placeholder="Укажите дату" />
+                  value="1 сентября 2023" placeholder="Укажите дату" required/>
                 <span class="footnote">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="field-people">
@@ -230,7 +230,7 @@
                     <span class="visually-hidden">Уменьшает количество взрослых</span>
                   </button>
                   <input class="modal-field modal-field-people" id="adult-people" type="number" name="adult" value="2"
-                    min="1" max="99" />
+                    min="1" max="99" required/>
                   <button class="modal-button-plus" type="button">
                     <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                       focusable="false" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
@@ -261,7 +261,7 @@
                     <span class="visually-hidden">Уменьшает количество детей</span>
                   </button>
                   <input class="modal-field modal-field-people" id="child-people" type="number" name="child" value="2"
-                    min="0" max="99" />
+                    min="0" max="99" required/>
                   <button class="modal-button-plus" type="button">
                     <svg class="modal-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                       focusable="false" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
