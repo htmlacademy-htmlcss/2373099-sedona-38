@@ -1535,7 +1535,7 @@ body {
   -ms-grid-columns: 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 212px 16px auto 16px auto 16px auto 16px auto;
-  grid-template-rows: 212px repeat(4, auto);
+  grid-template-rows: 212px 1fr;
   max-width: 300px;
   gap: 16px 20px;
       grid-template-areas:
